@@ -1,0 +1,30 @@
+{
+  "name": "dejtech-flex-grid",
+  "version": "1.0.0",
+  "description": "Dej'Tech 23 - Focus CSS : Flex & Grid",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgrasland/scrumboard.git"
+  },
+  "keywords": [
+    "dej'tech",
+    "grid",
+    "flex",
+    "demo",
+    "scrumboard"
+  ],
+  "author": "pierrick.grasland <pierrick.grasland@adventiel.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgrasland/scrumboard/issues"
+  },
+  "homepage": "https://github.com/pgrasland/scrumboard#readme",
+  "dependencies": {
+    "finalhandler": "^1.1.1",
+    "serve-static": "^1.13.2"
+  }
+}
