@@ -1,14 +1,9 @@
-var finalhandler = require("finalhandler");
-var http = require("http");
+var express = require("express");
+var path = require("path");
 var serveStatic = require("serve-static");
 
-// Serve up public/ftp folder
-var serve = serveStatic("src");
+var app = express();
 
-// Create server
-var server = http.createServer(function onRequest(req, res) {
-  serve(req, res, finalhandler(req, res));
-});
-
-// Listen
-server.listen(3000);
+app.use(serveStatic(path.join(__dirname, "src")));
+app.use(serveStatic(path.join(__dirname, "doc")));
+app.listen(3000);
