@@ -1,0 +1,64 @@
+.grid-header.small-postit .desc {
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: [us-row-start] auto [us-row-end];
+  }
+  .grid-header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .grid-header.todo,
+  .grid-header.doing,
+  .grid-header.done {
+    display: none;
+  }
+  .us1 {
+    grid-row: 2;
+  }
+  .us2 {
+    grid-row: 4;
+  }
+  .us3 {
+    grid-row: 6;
+  }
+  .us4 {
+    grid-row: 8;
+  }
+  .us1.todo,
+  .us1.doing,
+  .us1.done {
+    grid-row: 3;
+  }
+  .us2.todo,
+  .us2.doing,
+  .us2.done {
+    grid-row: 5;
+  }
+  .us3.todo,
+  .us3.doing,
+  .us3.done {
+    grid-row: 7;
+  }
+  .us4.todo,
+  .us4.doing,
+  .us4.done {
+    grid-row: 9;
+  }
+  .user-story {
+    grid-column: 1/4;
+  }
+  .todo {
+    grid-column: 1/2;
+  }
+  .doing {
+    grid-column: 2/3;
+  }
+  .done {
+    grid-column: 3;
+  }
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush|Patrick+Hand+SC");
+html,
+body {
+  font-size: calc(0.75em + 0.5vw);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf4;
+  font-family: "Caveat Brush", cursive;
+  /* font-family: "Patrick Hand SC", cursive; */
+}
+
+h1 {
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  z-index: 2;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+}
+
+main,
+aside {
+  padding: 1rem;
+  text-align: center;
+}
+main,
+aside {
+  z-index: 1;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.4);
+}
+
+/* Post it like div */
+
+.red {
+  background: linear-gradient(
+    135deg,
+    #ff5252 81%,
+    #ff5252 82%,
+    #ff5252 82%,
+    #ff5252 100%
+  );
+}
+.yellow {
+  background: linear-gradient(
+    135deg,
+    #ffff88 81%,
+    #ffff88 82%,
+    #ffff88 82%,
+    #ffffc6 100%
+  );
+}
+.green {
+  background: linear-gradient(
+    135deg,
+    #7dff55 81%,
+    #7dff55 82%,
+    #7dff55 82%,
+    #7dff55 100%
+  );
+}
+.blue {
+  background: linear-gradient(
+    135deg,
+    #60affa 81%,
+    #60affa 82%,
+    #60affa 82%,
+    #60affa 100%
+  );
+}
+.white {
+  background: linear-gradient(
+    135deg,
+    #fcfcfc 81%,
+    #fcfcfc 82%,
+    #fcfcfc 82%,
+    #fcfcfc 100%
+  );
+}
+.postit {
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+  margin: 0.25rem;
+}
+.postit.white,
+.postit:hover {
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.6);
+}
+h1.desc {
+  border-bottom: none;
+  padding: 0.5em 1em;
+}
+nav > a:first-child > img {
+  height: 3rem;
+}
+nav > a:last-child > img {
+  height: 1.5rem;
+}

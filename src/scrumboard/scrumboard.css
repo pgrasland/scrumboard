@@ -1,0 +1,59 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: [user-story-start] 2fr [user-story-end todo-start] 1fr [todo-end doing-start] 1fr [doing-end done-start] 1fr [done-end];
+  /* grid-column-gap: 5em; */
+  grid-template-rows:
+    [grid-header-start] auto [grid-header-stop]
+    repeat(4, 1fr);
+}
+/* Columns */
+.user-story {
+  grid-column-start: user-story-start;
+  grid-column-end: user-story-end;
+}
+.todo {
+  grid-column: 2/3;
+}
+.doing {
+  grid-column-start: doing-start;
+  grid-column-end: doing-end;
+}
+.done {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+/* Header positionning */
+
+/* User story positionning */
+.grid-header {
+  grid-row: 1/2;
+}
+.us1 {
+  grid-row: 2;
+}
+.us2 {
+  grid-row: 3;
+}
+.us3 {
+  grid-row: 4;
+}
+.us4 {
+  grid-row: 5;
+}
+/* item alignment */
+/* .todo {
+    justify-self:start;
+}
+
+.done {
+    justify-self:end;
+}
+
+.doing {
+    justify-self:center;
+} */
+.grid-header {
+  font-size: 1.5em;
+  align-self: center;
+  text-align: center;
+}

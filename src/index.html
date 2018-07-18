@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dej'Tech CSS Flex & Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./menu/menu.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./backlog/backlog.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./scrumboard/scrumboard.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./better-postit/better-postit.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./better-scrumboard/better-scrumboard.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+</head>
+
+<body class='main-grid'>
+    <header>
+        <nav class="flex-container">
+            <a class="flex-item" link='#'>
+                <img src="./assets/home.svg">
+            </a>
+            <h1 class="flex-item">Dej'Tech #23</h1>
+            <a class="flex-item exit flex-container" link='#'>
+                <img class="flex-item" src="./assets/exit.svg">Redmine</a>
+        </nav>
+    </header>
+    <main class="grid-container">
+
+        <div class="us2 postit yellow large-postit user-story">
+            <div class="issue">#27575</div>
+            <div class="desc">US yellow</div>
+        </div>
+        <div class="us2 postit yellow small-postit todo">
+            <div class="issue">#27576</div>
+            <div class="desc">Spec</div>
+            <img class="avatar" src="./assets/avatar.svg">
+        </div>
+        <div class="us2 postit yellow small-postit done">
+            <div class="issue">#27577</div>
+            <div class="desc">Back</div>
+            <img class="avatar" src="./assets/avatar.svg">
+        </div>
+
+        <div class="us1 postit red large-postit user-story">
+            <div class="issue">#27578</div>
+            <div class="desc">US red</div>
+        </div>
+        <div class="us1 postit red small-postit doing">
+            <div class="issue">#27579</div>
+            <div class="desc">Front</div>
+            <img class="avatar" src="./assets/avatar.svg">
+        </div>
+        <div class="us1 postit red small-postit done">
+            <div class="issue">#27580</div>
+            <div class="desc">Spec</div>
+            <img class="avatar" src="./assets/avatar.svg">
+        </div>
+
+        <div class="us4 postit blue large-postit user-story">
+            <div class="issue">#27611</div>
+            <div class="desc">US blue</div>
+        </div>
+        <div class="us4 postit blue small-postit todo">
+            <div class="issue">#27612</div>
+            <div class="desc">Spec</div>
+            <img class="avatar" src="./assets/avatar.svg">
+        </div>
+        <div class="us4 postit blue small-postit done">
+            <div class="issue">#27613</div>
+            <div class="desc">Front</div>
+            <img class="avatar" src="./assets/avatar.svg">
+        </div>
+
+        <div class="us3 postit green large-postit user-story">
+            <div class="issue">#27623</div>
+            <div class="desc">US green</div>
+        </div>
+        <div class="us3 postit green small-postit doing">
+            <div class="issue">#27624</div>
+            <div class="desc">Front</div>
+            <img class="avatar" src="./assets/avatar.svg">
+        </div>
+        <div class="us3 postit green small-postit done">
+            <div class="issue">#27625</div>
+            <div class="desc">Spec</div>
+            <img class="avatar" src="./assets/avatar.svg">
+        </div>
+
+        <div class="postit white grid-header small-postit user-story">
+            <div class="desc">US</div>
+        </div>
+        <div class="postit white grid-header small-postit todo">
+            <div class="desc">Todo</div>
+        </div>
+        <div class="postit white grid-header small-postit doing">
+            <div class="desc">Doing</div>
+        </div>
+        <div class="postit white grid-header small-postit done">
+            <div class="desc">Done</div>
+        </div>
+        </div>
+    </main>
+    <aside>
+        <h1 class="postit white desc">Backlog</h1>
+        <div class="flex-container">
+            <div class="postit yellow ">Feature 1</div>
+            <div class="postit red p1 ">A feature 2</div>
+            <div class="postit green p2 ">A feature 3</div>
+            <div class="postit blue not-planned ">A feature 4</div>
+            <div class="postit yellow ">Feature 5</div>
+            <div class="postit red p1 ">Feature 7</div>
+            <div class="postit green p2 ">Feature 8</div>
+            <div class="postit blue not-planned ">Feature 9</div>
+            <div class="postit yellow ">Feature 10</div>
+        </div>
+    </aside>
+</body>
+
+</html>

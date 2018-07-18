@@ -1,0 +1,16 @@
+.main-grid {
+  height: 100vh;
+}
+
+.main-grid > main {
+  background-color: #dd8;
+}
+
+.main-grid > aside {
+  background-color: #ccf;
+}
+
+.main-grid > header {
+  background-color: #feb;
+  height: 10vh;
+}

@@ -1,0 +1,28 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: 30vw repeat(3, 1fr);
+  grid-template-areas: "header header header header" "aside main main main";
+  grid-template-rows: auto 1fr;
+  grid-gap: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-grid {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "aside";
+  }
+}
+
+.main-grid > aside {
+  grid-area: aside;
+  margin-left: 1vw;
+}
+
+.main-grid > header {
+  grid-area: header;
+}
+
+.main-grid > main {
+  grid-area: main;
+  margin-right: 1vw;
+}

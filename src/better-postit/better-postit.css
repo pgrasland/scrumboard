@@ -1,0 +1,64 @@
+.large-postit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "issue . ." "desc desc desc" "desc desc desc";
+}
+
+.small-postit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "desc desc " "desc desc " "issue avatar";
+}
+
+.large-postit > .desc,
+.small-postit > .desc {
+  grid-area: desc;
+}
+
+.large-postit > .issue,
+.small-postit > .issue {
+  grid-area: issue;
+}
+
+.small-postit > .avatar {
+  grid-area: avatar;
+}
+
+.desc {
+  align-self: self-end;
+  justify-self: stretch;
+  text-align: center;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: solid 0.2rem black;
+}
+
+.issue {
+  align-self: stretch;
+  justify-self: stretch;
+  font-size: 1.5em;
+  border-right: solid 0.2rem black;
+}
+
+.avatar {
+  align-self: stretch;
+  justify-self: stretch;
+  height: 2em;
+}
+
+.large-postit > .issue {
+  justify-self: start;
+  align-self: baseline;
+  border-bottom: solid 0.2rem black;
+  padding: 0 1em;
+}
+
+.large-postit > .desc {
+  justify-self: stretch;
+  align-self: stretch;
+  border-bottom: none;
+  text-align: center;
+  font-size: 3em;
+}

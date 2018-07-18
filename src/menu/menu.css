@@ -1,0 +1,39 @@
+header .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1.flex-item {
+  font-size: 3em;
+  margin: auto;
+}
+
+.flex-item {
+  padding: 0rem 0.5rem;
+}
+
+.flex-item:first-child {
+  padding-left: 0.5rem;
+}
+
+/** Responsive menu **/
+
+@media only screen and (max-width: 1000px) {
+  header .flex-container {
+    flex-direction: column;
+  }
+  .flex-item {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1.5em;
+  }
+  .flex-item.exit,
+  h1.flex-item {
+    margin: auto;
+  }
+  header .flex-container.exit {
+    flex-direction: row;
+  }
+}
